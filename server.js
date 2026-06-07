@@ -6,7 +6,7 @@ import { createBackendApp, ensureDownloadsDir } from './backend-app.js';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const distDir = path.join(__dirname, 'dist');
 const app = createBackendApp();
-const port = Number(process.env.PORT || 8787);
+const port = 8787;
 
 app.use(express.static(distDir));
 
