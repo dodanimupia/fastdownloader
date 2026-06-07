@@ -8,6 +8,7 @@
     "frontend:dev": "vite",
     "backend:dev": "node server.js",
     "build": "vite build",
+    "start": "node server.js",
     "preview": "vite preview"
   },
   "dependencies": {

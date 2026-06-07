@@ -1,0 +1,10 @@
+.git
+.gitignore
+.venv
+.npm-cache
+node_modules
+dist
+downloads/*
+!downloads/.gitkeep
+*.log
+.DS_Store
