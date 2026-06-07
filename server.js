@@ -10,7 +10,7 @@ const port = Number(process.env.PORT || 8787);
 
 app.use(express.static(distDir));
 
-app.get('*', (_request, response) => {
+app.use((_request, response) => {
   response.sendFile(path.join(distDir, 'index.html'));
 });
 
