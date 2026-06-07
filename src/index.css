@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#efefef] font-sans text-ink antialiased;
+}
+
+#root {
+  @apply min-h-screen;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at top center, rgba(91, 124, 255, 0.05), transparent 26%),
+    radial-gradient(circle at 20% 20%, rgba(51, 184, 137, 0.05), transparent 22%);
+}
+
+::selection {
+  @apply bg-accent/20 text-ink;
+}
